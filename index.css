@@ -1,0 +1,436 @@
+* {
+  margin : 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color          : #fff;
+}
+
+body {
+  height: 5000px;
+}
+
+/* 字体图标 */
+@font-face {
+  font-family: 'iconfont';
+  src        : url('./font/iconfont.eot');
+  src        : url('./font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('./font/iconfont.woff2') format('woff2'),
+    url('./font/iconfont.woff') format('woff'),
+    url('./font/iconfont.ttf') format('truetype'),
+    url('./font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family            : "iconfont" !important;
+  font-size              : 16px;
+  font-style             : normal;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* 头部样式 */
+header {
+  width           : 1020px;
+  height          : 95px;
+  background-color: #303441;
+}
+
+header .logo {
+  float      : left;
+  cursor     : pointer;
+  margin-left: 40px;
+  margin-top : 33px;
+  color      : #fff;
+  font-weight: 400;
+}
+
+header .logo::after {
+  content    : '*';
+  color      : #ee5052;
+  font-weight: 900;
+  font-size  : 23px;
+}
+
+/* 头部导航样式 */
+header .header_nav {
+  height     : 95px;
+  display    : flex;
+  align-items: center;
+}
+
+header .header_nav ul {
+  float       : right;
+  margin-right: 30px;
+}
+
+header .header_nav ul li {
+  float: left;
+
+  margin : auto 10px;
+  padding: 10px;
+}
+
+header .header_nav ul li a {
+  font-size  : 13px;
+  font-weight: 600;
+}
+
+header .header_nav ul li a:hover {
+  color: red;
+}
+
+/* 轮播图区域 */
+.main {
+  width : 1020px;
+  height: 600px;
+}
+
+.main ul {
+  position: relative;
+}
+
+.main ul li {
+  width : 100%;
+  height: 100%;
+}
+
+.main ul .left,
+.main ul .right {
+  position   : absolute;
+  top        : 45%;
+  cursor     : pointer;
+  font-size  : 40px;
+  color      : rgba(0, 0, 0, .3);
+  font-weight: 800;
+}
+
+.main ul .left {
+  left: 15px;
+}
+
+.main ul .left:hover {
+  background-color: rgba(0, 0, 0, .3);
+  border-radius   : 50% 0 0 50%;
+}
+
+.main ul .right:hover {
+  background-color: rgba(0, 0, 0, .3);
+  border-radius   : 50% 0 0 50%;
+}
+
+.main ul .right {
+  right    : 15px;
+  transform: rotate(180deg);
+}
+
+/* Our Services区域 样式 */
+article {
+  padding         : 0 40px;
+  box-sizing      : border-box;
+  width           : 1020px;
+  height          : 500px;
+  background-color: #f2f2f2;
+}
+
+article h2 {
+  display      : inline-block;
+  margin-top   : 65px;
+  margin-bottom: 30px;
+  color        : #666d89;
+  font-size    : 30px;
+}
+
+article p {
+  line-height: 30px;
+  font-size  : 16px;
+  color      : #767e9e;
+}
+
+article ul {
+  display   : flex;
+  flex-wrap : wrap;
+  margin-top: 50px;
+  width     : 960px;
+}
+
+article ul li span {
+  padding      : 10px;
+  margin-right : 20px;
+  border       : 2px solid #6d748e;
+  border-radius: 50%;
+  font-size    : 38px !important;
+}
+
+article ul li {
+  flex         : 1;
+  display      : inline-block;
+  margin-right : 20px;
+  margin-bottom: 30px;
+
+  width    : 300px;
+  min-width: 30%;
+}
+
+article ul li span {
+  float: left;
+}
+
+article ul li table th {
+  font-size: 18px;
+  color    : #666d89;
+}
+
+article ul li table tr td {
+  font-size: 12px;
+}
+
+/* Portfolio区域样式 */
+.portfolio {
+  padding         : 0 40px;
+  box-sizing      : border-box;
+  width           : 1020px;
+  height          : 870px;
+  background-color: #303441;
+}
+
+.portfolio h2 {
+  display      : inline-block;
+  margin-top   : 65px;
+  margin-bottom: 25px;
+  color        : #666d89;
+  font-size    : 30px;
+}
+
+.portfolio p {
+  margin-bottom: 15px;
+  font-size    : 18px;
+  color        : #767e9e;
+}
+
+.portfolio .portfolio_label {
+  float   : left;
+  width   : 100%;
+  overflow: hidden;
+}
+
+.portfolio .portfolio_label li {
+  float        : left;
+  margin-right : 10px;
+  padding      : 5px;
+  border       : 1px solid #636a86;
+  border-radius: 10px;
+  color        : #767e9e;
+}
+
+.portfolio .portfolio_label li:hover {
+  border-color: #fff;
+  color       : #fff;
+  cursor      : pointer;
+}
+
+.portfolio .portfolio_picture {
+  display  : flex;
+  flex-wrap: wrap;
+  width    : 940px;
+}
+
+.portfolio .portfolio_picture li {
+  margin   : 15px 20px 0 0;
+  flex     : 1;
+  min-width: 20%;
+}
+
+.portfolio .portfolio_picture li img {
+  width : 220px;
+  height: 190px;
+}
+
+/* AboutUs区域样式 */
+.aboutUs {
+  padding         : 0 40px;
+  box-sizing      : border-box;
+  width           : 1020px;
+  height          : 735px;
+  background-color: #f2f2f2;
+}
+
+.aboutUs h2 {
+  display      : inline-block;
+  margin-top   : 65px;
+  margin-bottom: 25px;
+  color        : #666d89;
+  font-size    : 30px;
+}
+
+.aboutUs>p {
+  line-height: 25x;
+  color      : #767e9e;
+  font-size  : 15px;
+}
+
+.aboutUs ul {
+  display   : flex;
+  margin-top: 50px;
+}
+
+.aboutUs ul li {
+  flex        : 1;
+  margin-right: 20px;
+  width       : 300px;
+}
+
+.aboutUs ul li img {
+  width : 100%;
+  height: 300px;
+}
+
+.aboutUs ul li h4 {
+  margin-top: 20px;
+  color     : #666d89;
+  font-size : 20px;
+}
+
+.aboutUs ul li p {
+  margin-top   : 15px;
+  margin-bottom: 25px;
+  line-height  : 20px;
+
+  color    : #767e9e;
+  font-size: 12px;
+}
+
+.aboutUs ul li div span {
+  padding      : 8px;
+  border       : 1px solid #69708b;
+  border-radius: 50%;
+  font-weight  : 800;
+  font-size    : 20px;
+}
+
+/* Get a Quote区域样式 */
+.GetaQuote {
+  padding         : 0 40px;
+  box-sizing      : border-box;
+  width           : 1020px;
+  height          : 655px;
+  background-color: #eb5055;
+}
+
+.GetaQuote h2 {
+  display      : inline-block;
+  margin-top   : 65px;
+  margin-bottom: 25px;
+  color        : #f0d8d9;
+  font-size    : 30px;
+}
+
+.GetaQuote p {
+  margin-bottom: 45px;
+  line-height  : 30px;
+  font-size    : 15px;
+  color        : #efc6c7;
+}
+
+.GetaQuote .message .messageInput {
+  float : left;
+  width : 620px;
+  height: 365px;
+
+}
+
+.GetaQuote .message .messageInput input {
+  box-sizing      : border-box;
+  padding-left    : 15px;
+  margin-bottom   : 15px;
+  outline: none;
+  width           : 100%;
+  height          : 40px;
+  border-radius   : 7px;
+  color           : #f59194;
+  background-color: #ca4549;
+}
+
+.GetaQuote .message .messageInput input::placeholder {
+  color: #f59194;
+}
+
+.GetaQuote .message .messageInput input:nth-child(4)::placeholder {
+  position: relative;
+  top     : -80px;
+}
+
+.GetaQuote .message .messageContact {
+  float : left;
+  width : 300px;
+  height: 365px;
+}
+
+.GetaQuote .message .messageInput input:nth-child(4) {
+  height: 200px;
+}
+
+.GetaQuote .message .messageContact {
+  box-sizing  : border-box;
+  padding-left: 20px;
+}
+
+.GetaQuote .message .messageContact h4 {
+  margin-bottom: 15px;
+  color        : #f0d8d9;
+  font-size    : 16px;
+}
+
+.GetaQuote .message .messageContact p {
+  margin-bottom: 20px;
+  font-size    : 12px;
+  line-height  : 20px;
+  color        : #f0d8d9;
+}
+
+.GetaQuote .message .messageContact ul li {
+  margin-bottom: 10px;
+  color        : #f0d8d9;
+  font-size    : 12px;
+}
+
+.GetaQuote .message .messageContact ul li span {
+  margin-right: 10px;
+}
+
+/* 底部区域样式 */
+
+footer {
+  padding-left    : 40px;
+  box-sizing      : border-box;
+  width           : 1020px;
+  height          : 95px;
+  background-color: #303441;
+}
+
+footer span {
+  color      : #666d89;
+  line-height: 85px;
+}
+
+footer ul {
+  float: right;
+  margin-right: 40px;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+footer ul li span {
+  padding: 5px;
+  border: 2px solid #666d89;
+  border-radius: 50%;
+}
